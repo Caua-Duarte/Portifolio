@@ -27,14 +27,14 @@ footer{
 
 li{
     border: none;
-    padding: 1rem;
-    border-radius: 20px;
     list-style-type: none;
     text-decoration: unset;
 }
 
 a{
     text-decoration: none;
+    padding: 1rem;
+    border-radius: 20px;
     color: black;
 }
 
@@ -72,26 +72,32 @@ img{
 
 #container-header{
     width: 100%;
-    height: 125px;
     margin: auto;
-    padding: 1rem;
 }
 
 #container-main{
     width: 100%;
     margin: auto;
-    padding: 1rem;
 }
 
 #container-footer{
     width: 100%;
     margin: auto;
-    padding: 1rem;
+
+}
+
+#menu{
+    text-align: center;
+    display: block;
 }
 
 /* ========= ID ========= */
 
 /* ========= HEADER ========= */
+
+#btn{
+    display: none;
+}
 
 .img-header{
     width: 100%;
@@ -99,48 +105,43 @@ img{
     border-radius: 20px 20px 0px 0px;
 }
 
+.conteudo-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .img-perfil{
-    position: relative;
+    width: 30%; 
+    text-align: center;
 }
 
 .image{
-    width: 200px;
-position: absolute;
-    padding: 1rem;
+    width: 70%;
+    border-radius: 100%;
+    background-color: chocolate;
 } 
-
-.conteudo-header{
-    width: 80%;
-    align-items: center;
-    margin: auto;
-}
 
 .center-header{
     width: 70%;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
 }
 
 .nome{
-    padding: 0.75rem;
-    padding-right: 0;
-}
-
-.bt_list:hover{
-    background-color: #637AE9;
-    color: white;
-}
-
-.menu{
-    padding: 0.75rem;
-    padding-right: 0;
+    width: 100%;
+    text-align: center;
+    
 }
 
 .display{
     width: auto;
     height: auto;
+    padding-top: 1rem;
     display: inline-flex;
+}
+
+.bt_list a:hover{
+    background-color: #637AE9;
+    color: white;
 }
 
 /* ========= MAIN ========= */
@@ -156,6 +157,7 @@ margin: auto;
 .titulo{
     text-align: center;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .paragrafo{
@@ -167,16 +169,21 @@ margin: auto;
 /* ========= PROJETOS ========= */
 .projetos{
     width: 100%;
+    padding: 1rem;
     margin: auto;
 }
 
-.projetos .titulo{
-    padding: 1rem;
-}
-
 .list-proj{
+    padding: 1rem;
     display: inline-flex;
     align-items: center;
+}
+
+.img-main{
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+    background-color: chartreuse;
 }
 
 .text{
@@ -186,6 +193,12 @@ margin: auto;
 /* ========= FOOTER ========= */
 .conteudo-footer{
     display: flex;
+}
+
+.contato-title{
+    width: 33%;
+    margin: auto;
+    text-align: center;
 }
 
 .contato{
@@ -205,8 +218,7 @@ margin: auto;
 }
 
 .contato-vetor .vetor{
-    width: 2.5rem;
-    padding-right: 1rem;    
+    width: 2.5rem; 
 }
 
 .contato-vetor:hover{
@@ -219,3 +231,168 @@ margin: auto;
     padding: 0.25rem;
 }
 
+.vetor-nome{
+    width: 100px;
+}
+
+
+@media only screen and (max-width: 955px) {
+    
+
+    /* ========= HEADER ========= */
+    #img-header{
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+    
+    #container-header{
+        width: 100%;
+        height: 0;
+        margin: auto;
+        position: relative;
+        top: -412px;
+        color: white;
+    }
+
+    #menu{
+        text-align: center;
+        display: block;     
+    }
+
+    a{
+        color: white;
+    }
+    
+    .conteudo-header{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        position: relative;
+        align-items: center;
+    }
+
+    .img-perfil{
+        width: 50%; 
+        margin: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .center-header{
+        width: 100%;
+    }
+
+    .nome{
+        width: 100%;
+        text-align: center; 
+    }
+
+    
+
+    .bt_list{
+        text-align: center;
+    }
+
+    .bt_list a:hover{
+        background-color: #637AE9;
+        color: rgb(0, 0, 0);
+    }
+
+    /* ========= FOOTER ========= */
+    
+    .link{
+        display: list-item;
+        padding: 0.25rem;
+        margin: auto;
+        border: none;
+        list-style-type: none;
+        text-decoration: unset;
+    }
+    
+    .vetor-nome{
+        width: 100px;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* ========= HEADER ========= */
+    body{
+        background-color: tomato;
+        background-image: none;
+    }
+
+    header{
+        background-color: #8f63e9;
+        border-radius: 0;
+    }
+    
+    footer{
+        background-color: #8f63e9;
+        border-radius: 0;
+    }
+
+    #containner {
+        width: 100%;
+    }
+
+    #container-header{
+        top: -350px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 270px;
+    }
+
+    .img-header{
+        border-radius: 0;
+    }
+
+    .center-header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .nome{
+        text-align: center;
+    }
+
+    
+   
+    /* ========= FOOTER ========= */
+
+    .conteudo-footer{
+        display: grid;
+    }
+
+    .contato-title{
+        padding: 1.25rem;
+
+    }
+
+    .contato{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        display: inline-flex;
+    }
+    
+    .contato-vetor{
+        width: 33%;
+    }
+
+    .contato-vetor-hidden{
+        width: 33%;
+        height: 100px;
+    }
+
+}
