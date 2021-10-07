@@ -25,6 +25,14 @@ footer{
     border-radius: 0px 0px 40px 40px;
 }
 
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
 li{
     border: none;
     list-style-type: none;
