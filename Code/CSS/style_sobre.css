@@ -35,13 +35,6 @@
         align-items: center;
     }
     
-    .img-main{
-        width: 35%;
-        height: 35%;
-        border-radius: 100%;
-        background-color: chartreuse;
-    }
-    
     .text{
         padding: 1.5rem;
     }
@@ -61,7 +54,6 @@
     .img-main{
         margin: auto;
         border-radius: 100%;
-        background-color: chartreuse;
     }
 
 }

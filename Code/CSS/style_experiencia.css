@@ -12,8 +12,15 @@
 
 .list-proj{
     padding: 1rem;
-    display: grid;
+    display: flexbox;
     align-items: center;
+}
+
+.text-exp{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: .5rem;
 }
 
 @media only screen and (max-width: 600px){
@@ -38,7 +45,6 @@
         height: 50%;
         margin: auto;
         border-radius: 100%;
-        background-color: chartreuse;
     }
     
 }

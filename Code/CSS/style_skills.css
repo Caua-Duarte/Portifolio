@@ -28,7 +28,6 @@ button:hover{
     display: flexbox;
     align-items: center;
     border-radius: 20px;
-
     background-color: transparent;
 }
 
@@ -42,6 +41,7 @@ button:hover{
     max-width: 300px;
     max-height: 300px;
     border-radius: 0;
+    border: none;
     background-color: unset;
 }
 
@@ -148,10 +148,28 @@ button:hover{
         transform: rotate(45deg);
 }
 
+@media only screen and (max-width: 955px){
+    .skills{
+        width: 100%;
+    }
+    
+}
+
 @media only screen and (max-width: 600px){
     .skills{
-        display: flex;
+        display: grid;
         width: 100%;
         margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .skills{
+        width: 100%;
+    }
+    
+    .img-main{
+        width: 400px;
+        height: 400px;
     }
 }

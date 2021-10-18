@@ -3,6 +3,11 @@
     display: flexbox;
 }
 
+.text{
+    padding: 1.5rem;
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px){
     
     .formacao{
@@ -21,11 +26,10 @@
     }
     
     .img-main{
-        width: 50%;
-        height: 50%;
+        width: 150px;
+        height: 150px;
         margin: auto;
         border-radius: 100%;
-        background-color: chartreuse;
     }
     
 }

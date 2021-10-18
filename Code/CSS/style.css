@@ -109,7 +109,7 @@ img{
 }
 
 .menu{
-        display: none;
+    display: none;
 }
 
 .img-header{
@@ -120,23 +120,30 @@ img{
 
 .conteudo-header{
     width: 100%;
-    display: flex;
     align-items: center;
 }
 
 .img-perfil{
-    width: 30%; 
+    width: 350px;
+    top: -150px;
+    left: 0%;
+    position: absolute; 
     text-align: center;
+    align-items: center;
 }
 
 .image{
     width: 70%;
+    height: 70%;
     border-radius: 100%;
-    background-color: chocolate;
 } 
 
 .center-header{
     width: 70%;
+    height: 100px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
 }
 
 .nome{
@@ -172,6 +179,10 @@ img{
     box-shadow: 5px 5px 10px 0px #000000;
 }
 
+.tittle-proj{
+    text-align: center;
+}
+
 .list-proj{
     padding: 1rem;
     display: grid;
@@ -179,39 +190,55 @@ img{
 }
 
 .img-main{
-    width: 50%;
-    height: 50%;
+    width: 200px;
+    height: 200px;
     margin: auto;
     border-radius: 100%;
-    background-color: chartreuse;
+    border: 1px solid black;
 }
 
 .text{
     padding: 1.5rem;
+    padding-top: 0;
 }
 
 /* ========= FOOTER ========= */
+
 .conteudo-footer{
-    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1rem;
+    max-width: 800px;
+    text-align: right;
+    display: grid;
 }
 
 .contato-title{
     width: 33%;
     margin: auto;
+    padding: 1.25rem;
     text-align: center;
 }
 
 .contato{
-    width: 33%;
+    width: 100%;
+    height: 75px;
     margin: auto;
     text-align: center;
+    display: inline-flex;
 }
 
 .contato-vetor{
-    width: 60%;
+    width: 33%;
     margin: auto;
-    border-radius: 20px;    
+    border-radius: 20px;  
 }
+
+.contato-vetor-hidden{
+    width: 33%;
+    height: 100px;
+}
+
 .contato-vetor p{
     text-align: unset;
     color: white;
@@ -253,7 +280,7 @@ img{
         margin: auto;
         position: relative;
         top: -412px;
-        color: white;
+        color: whitesmoke;
     }
 
     #menu{
@@ -282,7 +309,8 @@ img{
     }
 
     .img-perfil{
-        width: 50%; 
+        position: initial;
+        width: 300px; 
         margin: auto;
         padding: 1rem;
         text-align: center;
@@ -324,7 +352,7 @@ img{
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     body{
         background-image: none;
     }
@@ -362,7 +390,7 @@ img{
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: white;
+        background-color: #8f63e9;
     }
     .btn span{
         width: 20px;
@@ -468,29 +496,24 @@ img{
    
     /* ========= FOOTER ========= */
 
-    .conteudo-footer{
-        display: grid;
-    }
 
-    .contato-title{
-        padding: 1.25rem;
-
-    }
-
-    .contato{
-        width: 100%;
-        height: 100px;
+    .link{
+        width: 50px;
+        padding: 1rem;
         text-align: center;
-        display: inline-flex;
-    }
-    
-    .contato-vetor{
-        width: 33%;
     }
 
-    .contato-vetor-hidden{
-        width: 33%;
-        height: 100px;
+    .link .vetor-nome{
+        display: none;
     }
 
+}
+
+@media only screen and (min-width: 1400px){
+    .img-main{
+        width: 300px;
+        height: 300px;
+        max-width: 400px;
+        max-height: 400px;
+    }
 }
