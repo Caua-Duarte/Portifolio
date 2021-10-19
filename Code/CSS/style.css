@@ -16,12 +16,12 @@ body{
 }
 
 header{
-    background-color: #8f63e9;
+    background-color: #637AE9;
     border-radius: 40px 40px 0px 0px;
 }
 
 footer{
-    background-color: #8f63e9;
+    background-color: #637AE9;
     border-radius: 0px 0px 40px 40px;
 }
 
@@ -43,7 +43,7 @@ a{
     text-decoration: none;
     padding: 1rem;
     border-radius: 20px;
-    color: black;
+    color: white;
 }
 
 p{
@@ -137,6 +137,7 @@ img{
 .conteudo-header{
     width: 100%;
     align-items: center;
+    box-shadow: 0px 5px 10px 0px #000000;
 }
 
 .img-perfil{
@@ -152,6 +153,7 @@ img{
     width: 70%;
     height: 70%;
     border-radius: 100%;
+    box-shadow: 5px 5px 10px 0px #000000;
 } 
 
 .center-header{
@@ -176,8 +178,8 @@ img{
 }
 
 .bt_list a:hover{
-    background-color: #637AE9;
-    color: white;    
+    background-color: white;
+    color: black;    
     transition: .3s;
 }
 
@@ -257,7 +259,7 @@ img{
 
 .contato-vetor p{
     text-align: unset;
-    color: white;
+    color: #637AE9;
 }
 
 .contato-vetor .vetor{
@@ -265,7 +267,8 @@ img{
 }
 
 .contato-vetor:hover{
-    background-color: #637AE9;
+    background-color: white;
+    color: black;
     transition: .3s;
 }
 
@@ -374,12 +377,10 @@ img{
     }
     
     header{
-        background-color: #8f63e9;
         border-radius: 0;
     }
     
     footer{
-        background-color: #8f63e9;
         border-radius: 0;
     }
 
@@ -406,7 +407,7 @@ img{
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: #8f63e9;
+        background-color: #637AE9;
     }
     .btn span{
         width: 20px;
@@ -485,7 +486,7 @@ img{
         width: 0;
         height: 3px;
         display: inline-flex;
-        background: #8f63e9;
+        background: #637AE9;
         transition: .3s;
     }
 
