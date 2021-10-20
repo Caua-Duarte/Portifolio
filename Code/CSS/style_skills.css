@@ -56,6 +56,13 @@ button:hover{
     position: relative;
 }
 
+body.dark .list-proj .texto{
+    background-color: #483d8b;
+}
+body.dark  p:hover{
+    color: black;
+}
+
 .click{
     width: 30px;
     position: absolute;
@@ -101,7 +108,7 @@ button:hover{
     border-radius: 10px;
     border: 2px solid black;
     background-color: white;
-    box-shadow: 10px 10px 0px 5px #8f63e9;
+    box-shadow: 10px 10px 0px 5px #705FD9;
 }
 
 .modal li{
