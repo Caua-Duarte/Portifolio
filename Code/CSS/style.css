@@ -97,8 +97,11 @@ img{
 }
 
 #menu{
-    text-align: center;
+    width: 450px;
+    margin: auto;
+    text-align: left;
     display: block;
+    position: relative;
 }
 
 /* ========= ID ========= */
@@ -304,11 +307,19 @@ body.dark footer{
 body.dark main p{
     color: #f0f0f0;
 }
+body.dark .contato-vetor{
+    color: #292c35;
+}
 body.dark .contato-vetor p{
     color: #483d8b;
 }
-body.dark .contato-vetor{
-    color: #292c35;
+
+.toggle{
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+    top: unset;
+    left: unset;
 }
 
 .checkbox{
@@ -340,7 +351,7 @@ body.dark .contato-vetor{
 }
 
 .checkbox:checked + .label .ball{
-    transform: translateX(25px);
+    transform: translateX(24.5px);
     background-color: #292c35;
 }
 .checkbox:checked + .label{
@@ -374,6 +385,7 @@ body.dark .contato-vetor{
         max-width: 400px;
         max-height: 400px;
     }
+
 }
 
 
@@ -413,12 +425,19 @@ body.dark .contato-vetor{
         color: white;
     }
 
+    .toggle{
+        position: inherit;
+        width: 60px;
+        padding: 1rem;
+        margin: auto;
+    }    
+
     .btn{
         display: none;
     }
-    
+
     .menu{
-            display: none;
+        display: none;
     }    
     
     .conteudo-header{
@@ -498,7 +517,21 @@ body.dark .contato-vetor{
     }
     
     #menu{
+        position: unset;
+    }
+
+    .display{
         display: none;
+    }
+
+    /* ========= MODO NOTURNO ========= */
+    .toggle{
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        bottom: unset;
+        right: unset;
     }
 
     /* ========= BOTÃO ========= */
@@ -605,13 +638,29 @@ body.dark .contato-vetor{
         border-radius: 0;
     }
 
+    .img-perfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+
     .center-header{
         width: 100%;
+        max-width: 450px;
+        min-width: 320px;
+        margin: auto;
         text-align: center;
+        padding-bottom: 1rem;
     }
 
     .nome{
         text-align: center;
+        margin: auto;
+        width: 300px;
     }
 
     
@@ -630,4 +679,3 @@ body.dark .contato-vetor{
     }
 
 }
-
