@@ -23,7 +23,7 @@
     padding: .5rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     
     .experiencia{
         display: inline-flexbox;
