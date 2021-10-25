@@ -8,15 +8,6 @@
         width: 100%;
     }
     
-    .titulo{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        box-shadow: 5px 5px 10px 0px #000000;
-    }
-    
     .paragrafo{
         width: 80%;
         margin: auto;
@@ -31,24 +22,34 @@
     
     .list-proj{
         padding: 1rem;
-        display: inline-flex;
+        display: flexbox;
         align-items: center;
+    }
+
+    .proj-item{
+        width: 70%;
+        margin: auto;
     }
     
     .text{
         padding: 1.5rem;
     }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 600px){
     
     .titulo{
         box-shadow: none;
     }
 
     .list-proj{
-        display: grid;
+        display: flexbox;
         align-items: center;
-        box-shadow: 5px 5px 10px 0px #000000;
+        box-shadow: 5px 5px 10px 0px #705FD9;
+    }
+
+    .proj-item{
+        width: 100%;
+        margin: auto;
     }
     
     .img-main{

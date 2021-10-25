@@ -7,11 +7,15 @@
 
     <!--  TITLE  -->
     <title>Portfólio Cauã</title>
+    <!--  UNICON  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--  FAVICON  -->
     <link rel="shortcut icon" href="Image/care.ico" type="image/x-icon">
     <!--  CSS  -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style_sobre.css">
+    <link rel="stylesheet" href="CSS/style_skills.css">
+
 
 </head>
 <body>
@@ -22,15 +26,17 @@
     <div id="container">
         <header>
             <!--  Container Header  -->         
+            <!--  Container Header Imagem de fundo  -->         
             <div id="img-header">
                 <img src="Image/fundo.png" alt="" class="img-header">
             </div>
-
+            
+            <!--  Container Header menu escondido  -->         
             <a href="javascript:;" title="" class="btn">
                 <span></span>
                 <span></span>
             </a>
-
+            
             <div class="menu">
                 <ul class="menu_list">
                     <li> <a href="index.html" title="" class="menu_link">Sobre</a> </li>
@@ -40,10 +46,16 @@
                 </ul>
             </div>
 
+            <!--  Container Header Conteúdo  -->         
             <div id="container-header">
                 <div class="conteudo-header">
                     <div class="img-perfil">
-                        <img src="Image/perfil.jfif" alt="" class="image">
+                        <div class="config_img">
+                            <!--<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="image-f">
+                                <path d="M66.3,-51.4C82.2,-32.9,89,-5.5,82,16.2C75.1,38,54.4,54.1,35.6,56.5C16.7,59,-0.4,47.7,-17.7,38.7C-34.9,29.6,-52.3,22.8,-58.5,9.4C-64.7,-4,-59.8,-23.9,-48.2,-41.4C-36.6,-59,-18.3,-74.2,3.4,-76.9C25.2,-79.6,50.3,-69.9,66.3,-51.4Z" transform="translate(100 100)" />
+                            </svg>-->
+                            <img src="Image/perfil.png" alt="" class="image">
+                        </div>
                     </div>
                     <div class="center-header">
                         <div class="nome">
@@ -51,16 +63,16 @@
                         </div>
                         <div id="menu">
                             <ul class="display">
-                                <li class="bt_list"><a href="index.html" >Sobre</a></li>
-                                <li class="bt_list"><a href="Pages/formacao.html" >Formação</a></li>
-                                <li class="bt_list"><a href="Pages/experiencia.html" >Experiência</a></li>
-                                <li class="bt_list"><a href="Pages/skills.html" >Skills</a></li>
+                                <li class="bt_list"><a href="#" >Sobre</a></li>
+                                <li class="bt_list"><a href="#" >Formação</a></li>
+                                <li class="bt_list"><a href="#" >Experiência</a></li>
+                                <li class="bt_list"><a href="#" >Skills</a></li>
                             </ul>
                             <div class="toggle">
                                 <input type="checkbox" id="checkbox" class="checkbox" />
                                 <label for="checkbox" class="label">
-                                <img src="Image/Img/moon.png" alt="" class="fas fa-moon">
-                                <img src="Image/Img/sun.png" alt="" class="fas fa-sun">
+                                <i class="uil uil-moon fas fa-moon"></i>
+                                <i class="uil uil-sun fas fa-sun"></i>
                                 <div class="ball"></div>
                                 </label>
                             </div>
@@ -80,9 +92,8 @@
                 <div class="conteudo-main">
                     <!--  Sobre mim  -->
                     <div class="sobre-mim">      
-                        <div class="titulo">
-                            <h2> Sobre mim </h2>     
-                        </div>
+
+                        <h2 class="titulo"> Sobre mim </h2>     
 
                         <div class="separacao"></div>
                         
@@ -95,10 +106,10 @@
                     <div class="separacao"></div>
                     
                     <!--  Projetos  -->
+                    
                     <div class="projetos">
-                        <div class="titulo">
-                            <h2> Projetos </h2>     
-                        </div>
+
+                        <h2 class="titulo"> Projetos </h2>     
 
                         <div class="separacao"></div>
                         
@@ -109,8 +120,10 @@
                             <div class="proj-item">
                                 <h3 class="tittle-proj">PokeApp</h3>
                                 <p class="text">
-                                    PokeApp é uma aplicação na qual você escolhe um pokemon dentro da lista para batalhar. Técnologias: C# e DotNet. <br> 
-                                    Projeto disponivel no<a href="https://github.com/Caua-Duarte/PokeApp" >Github</a>  
+                                    PokeApp é uma aplicação na qual você escolhe um pokemon dentro da lista para batalhar. <br> Técnologias: C# e DotNet.
+                                </p>
+                                <p class="text-a">
+                                    Projeto disponivel no<a href="https://github.com/Caua-Duarte/PokeApp" target="_blank">Github</a> 
                                 </p>
                             </div>
                             
@@ -125,7 +138,10 @@
                             <div class="proj-item">
                                 <h3 class="tittle-proj">Projeto Integrador</h3>
                                 <p class="text">
-                                    Projeto em desenvolvimento com finalidade de comprovar o aprendizado desenvolvido pelo curso técnico em Informatica para Internet do SENAI. Técnologias usadas até o momento: HTML, CSS, Java Script <br> Projeto disponivel no<a href="https://github.com/Caua-Duarte/Projeto-integrador" >Github</a>  
+                                    Projeto em desenvolvimento com finalidade de comprovar o aprendizado desenvolvido pelo curso técnico em Informatica para Internet do SENAI. <br> Técnologias usadas até o momento: HTML, CSS, Java Script
+                                </p>
+                                <p class="text-a">
+                                    Projeto disponivel no<a href="https://github.com/Caua-Duarte/PokeApp" target="_blank">Github</a> 
                                 </p>
                             </div>
                             
@@ -138,12 +154,201 @@
                             <div class="proj-item">
                                 <h3 class="tittle-proj">Sistema CRUD</h3>
                                 <p class="text">
-                                    Sistema CRUD no qual era adicionado, listado,  alterado e deletado livros de uma biblioteca ficticia.  <br> Técnogias: HTML, CSS, PHP e SQL. <br> Projeto disponivel no<a href="https://github.com/Caua-Duarte/Sistema_CRUD_biblioteca" >Github</a>  
+                                    Sistema CRUD no qual era adicionado, listado,  alterado e deletado livros de uma biblioteca ficticia.  <br> Técnogias: HTML, CSS, PHP e SQL.
+                                </p>
+                                <p class="text-a">
+                                    Projeto disponivel no<a href="https://github.com/Caua-Duarte/PokeApp" target="_blank">Github</a> 
                                 </p>
                             </div>
                         </div>
                         
                     </div>
+                    
+                    <div class="separacao"></div>
+
+                    <!--  Qualificação  -->
+                    <section class="qualification section"> 
+                        
+                        <div class="center">
+                            <h2 class="section__title titulo">Qualification</h2>
+                            <span class="section__subtitle">My personal journey</span>
+                        </div>
+                        
+
+                        <div class="qualification__container container-quali">
+                            <div class="qualification__tabs">
+                                <div class="qualification__button button--flex" data-target='#education'>
+                                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                                    Educação
+                                </div>
+
+                                <div class="qualification__button button--flex" data-target='#work'>
+                                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                                    Works
+                                </div>
+                            </div>
+                            
+                            <div class="qualification_section">
+                                <!--  Qualificação Content 1  -->
+                                <div class="qualification__content qualification__active" data-content id="education">
+                                    <!--  Qualificação 1  -->
+                                    <div class="qualification__data">
+                                        <div>
+                                            <h3 class="qualification__title">Ciência de dados</h3>
+                                            <span class="qualification__subtitle">FACENS - Faculdade de Engenharia de Sorocaba</span>
+                                            <div class="qualification__calendari">
+                                                <i class="uil uil-calendar-alt"></i>
+                                                2021 - 2023
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <span class="qualification__rounder"></span>
+                                            <span class="qualification__line"></span>
+                                        </div>
+                                    </div>
+
+                                    <!--  Qualificação 2  -->
+                                    <div class="qualification__data">
+                                        <div></div>
+
+                                        <div>
+                                            <span class="qualification__rounder"></span>
+                                            <span class="qualification__line"></span>
+                                        </div>
+
+                                        <div>
+                                            <h3 class="qualification__title">Téc. Web FullStack</h3>
+                                            <span class="qualification__subtitle">SENAI Gaspar Ricardo Junior</span>
+                                            <div class="qualification__calendari">
+                                                <i class="uil uil-calendar-alt"></i>
+                                                2020 - 2022
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--  Qualificação 3  -->
+                                    <div class="qualification__data">
+                                        <div>
+                                            <h3 class="qualification__title">Téc. em Mecatrônica</h3>
+                                            <span class="qualification__subtitle">SENAI Gaspar Ricardo Junior</span>
+                                            <div class="qualification__calendari">
+                                                <i class="uil uil-calendar-alt"></i>
+                                                2019 - 2020
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <span class="qualification__rounder"></span>
+                                            <!--<span class="qualification__line"></span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Qualificação Content 2  -->
+                                <div class="qualification__content" data-content id="work">
+                                    <!--  Qualificação 1  -->
+                                    <div class="qualification__data">
+                                        <div>
+                                            <h3 class="qualification__title">Estágio em Suporte Técnico</h3>
+                                            <span class="qualification__subtitle">HOSPITAL SANTO ÂNTONIO</span>
+                                            <div class="qualification__calendari">
+                                                <i class="uil uil-calendar-alt"></i>
+                                                2021 - até agora
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <span class="qualification__rounder"></span>
+                                            <!--<span class="qualification__line"></span>-->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    
+                    <!--  SKILLS  -->
+                    <!--  Skills Modal  -->
+                    <div >
+                        <h2 class="titulo"> Skills </h2>     
+                    </div>
+
+                    <div class="experiencia">
+                        <div class="skills">
+                            <div class="list-hard list-proj ">
+                                <img src="../Image/hard-skill.svg" alt="" class="img-main">
+                                <div class="texto">
+                                    <p class="text">
+                                        Hard Skills
+                                    </p>
+                                    <img src="../Image/Img/touch.png" alt="" class="click">
+                                </div>
+                            </div>
+    
+                            <div class="separacao"></div>
+
+                            <div class="list-soft list-proj ">
+                                <img src="../Image/soft-skill.svg" alt="" class="img-main">
+                                <div class="texto">
+                                    <p class="text">
+                                        Soft Skills
+                                    </p>
+                                    <img src="../Image/Img/touch.png" alt="" class="click">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="modal-hard" class="container-modal">
+                            
+                            <div class="modal">
+                                <div class="scroll-bg">
+                                    <div class="scroll-div">
+                                        <div class="scroll-obj">
+                                            
+                                            <div class="titulo">
+                                                <h2>Habilidades técnicas</h2>
+                                            </div>
+                                            
+                                            <ul class="habilidade">
+                                                <li><h3>Inglês - Nível Intermediario</h3></li>
+                                                <li><h3>Linguagens de marcação: Html, CSS;</h3></li>
+                                                <li><h3>Linguagens de programação: Python, C#, Java Script, PHP;</h3></li>
+                                                <li><h3>Conhecimento do pacote Office</h3></li>
+                                                <li><h3>Conhecimento em Git e Github</h3></li>
+                                                <li><h3>Conhecimento em DotNET</h3></li>
+                                            </ul>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="modal-soft" class="container-modal">
+                            <div class="modal">
+
+                                <div class="titulo">
+                                    <h2>Habilidades Sociais</h2>
+                                </div>
+                                
+                                <ul class="habilidade">
+                                    <li><h3>Adaptatitvo</h3></li>
+                                    <li><h3>Aplicado</h3></li>
+                                    <li><h3>Criativo</h3></li>
+                                    <li><h3>Extrovertido</h3></li>
+                                    <li><h3>Paciente</h3></li>
+                                    <li><h3>Perfeccionista</h3></li>
+                                    <li><h3>Proativo</h3></li>
+                                    <li><h3>Otimista</h3></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
 
@@ -161,7 +366,7 @@
 
                     <div class="contato">
                         <div class="contato-vetor">
-                            <a href="https://www.linkedin.com/in/caua-duarte-tech" class="link">
+                            <a href="https://www.linkedin.com/in/caua-duarte-tech" target="_blank" class="link">
                                 <img src="Image/Img/linkedin.png" class="vetor" >
                                 <p class="vetor-nome">Linkedin</p>
                             </a>
@@ -170,7 +375,7 @@
                         <div class="contato-vetor-hidden"></div>
 
                         <div class="contato-vetor">
-                            <a href="https://github.com/Caua-Duarte" class="link">
+                            <a href="https://github.com/Caua-Duarte" target="_blank" class="link">
                                 <img src="Image/Img/github.png" class="vetor" >
                                 <p class="vetor-nome">Github</p>
                             </a> 
@@ -180,19 +385,19 @@
                     <div class="contato">
                         
                         <div class="contato-vetor">
-                            <a href="https://t.me/Caua_Duarte" class="link">
+                            <a href="https://t.me/Caua_Duarte" target="_blank" class="link">
                                 <img src="Image/Img/telegram.png" class="vetor" >
                                 <p class="vetor-nome">Telegram</p>
                             </a>
                         </div>
                         <div class="contato-vetor">
-                            <a href="mailto:caua.duarte.sampaio@outlook.com" class="link">
+                            <a href="mailto:caua.duarte.sampaio@outlook.com" target="_blank" class="link">
                                 <img src="Image/Img/email.png" class="vetor" >
                                 <p class="vetor-nome">E-mail</p>
                             </a>
                         </div>
                         <div class="contato-vetor">
-                            <a href="https://instagram.com/duartecaua" class="link">
+                            <a href="https://instagram.com/duartecaua" target="_blank" class="link">
                                 <img src="Image/Img/instagram.png" class="vetor" >
                                 <p class="vetor-nome">Instagram</p>
                             </a>
@@ -207,5 +412,7 @@
     <!--  Java Script  -->
     <script src="JavaScript/on_click.js"></script>
     <script src="JavaScript/nocturne.js"></script>
+    <script src="JavaScript/modal.js"></script>
+    <script src="JavaScript/qualification.js"></script>
 </body>
 </html>
